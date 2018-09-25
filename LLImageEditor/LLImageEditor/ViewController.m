@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "YDCutViewController.h"
+#import <Masonry.h>
 
 @interface ViewController ()
+
+@property (nonatomic, weak) UIButton *btn;
 
 @end
 
@@ -16,8 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:btn];
+    _btn = btn;
+    [_btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(self.view).offset(100.f);
+    }];
+    [_btn setTitle:@"标题" forState:UIControlStateNormal];
+    [_btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [_btn addTarget:self action:@selector(onTapAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)onTapAction:(UIButton *)btn {
+    YDCutViewController *vc = [YDCutViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

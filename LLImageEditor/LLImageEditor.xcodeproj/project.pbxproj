@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F9A3CBC05E511D823CACC2B /* libPods-LLImageEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D48ECBD54AEDE3AD76638F /* libPods-LLImageEditor.a */; };
 		4178818B215158FC00A572C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178818A215158FC00A572C1 /* AppDelegate.m */; };
 		4178818E215158FC00A572C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178818D215158FC00A572C1 /* ViewController.m */; };
 		41788191215158FC00A572C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4178818F215158FC00A572C1 /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 		41788199215158FE00A572C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41788198215158FE00A572C1 /* main.m */; };
 		417881A3215158FE00A572C1 /* LLImageEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417881A2215158FE00A572C1 /* LLImageEditorTests.m */; };
 		417881AE215158FF00A572C1 /* LLImageEditorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417881AD215158FF00A572C1 /* LLImageEditorUITests.m */; };
+		417881C12151F73200A572C1 /* YDCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417881C02151F73200A572C1 /* YDCutViewController.m */; };
+		417881C32151F8A200A572C1 /* 100sh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 417881C22151F8A200A572C1 /* 100sh.jpg */; };
+		72E68338FFA6D954F4332732 /* libPods-LLImageEditorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6492A022AE70417680E31B37 /* libPods-LLImageEditorUITests.a */; };
+		FC1D370992D8B55B780D589D /* libPods-LLImageEditorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C8B401768275F22A74FBD /* libPods-LLImageEditorTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0505DB3477A407ABB515E744 /* Pods-LLImageEditorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditorUITests/Pods-LLImageEditorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B767D4232B9F6654ADED9D2 /* Pods-LLImageEditorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditorUITests/Pods-LLImageEditorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21D6E29EDCBB1DDAEF700107 /* Pods-LLImageEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditor/Pods-LLImageEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		3EBF3107FF0BE775E26222BC /* Pods-LLImageEditorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditorTests/Pods-LLImageEditorTests.release.xcconfig"; sourceTree = "<group>"; };
 		41788186215158FC00A572C1 /* LLImageEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLImageEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41788189215158FC00A572C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4178818A215158FC00A572C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +60,14 @@
 		417881A9215158FF00A572C1 /* LLImageEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLImageEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		417881AD215158FF00A572C1 /* LLImageEditorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLImageEditorUITests.m; sourceTree = "<group>"; };
 		417881AF215158FF00A572C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417881BF2151F73200A572C1 /* YDCutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCutViewController.h; sourceTree = "<group>"; };
+		417881C02151F73200A572C1 /* YDCutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDCutViewController.m; sourceTree = "<group>"; };
+		417881C22151F8A200A572C1 /* 100sh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 100sh.jpg; sourceTree = "<group>"; };
+		556C8B401768275F22A74FBD /* libPods-LLImageEditorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLImageEditorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6492A022AE70417680E31B37 /* libPods-LLImageEditorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLImageEditorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B421D5A17CF02021FD6CB3B1 /* Pods-LLImageEditorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditorTests/Pods-LLImageEditorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1D48ECBD54AEDE3AD76638F /* libPods-LLImageEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLImageEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77305AF29C11498F3828202 /* Pods-LLImageEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditor/Pods-LLImageEditor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9A3CBC05E511D823CACC2B /* libPods-LLImageEditor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1D370992D8B55B780D589D /* libPods-LLImageEditorTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +91,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E68338FFA6D954F4332732 /* libPods-LLImageEditorUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		316A6710227F054A1238FC53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1D48ECBD54AEDE3AD76638F /* libPods-LLImageEditor.a */,
+				556C8B401768275F22A74FBD /* libPods-LLImageEditorTests.a */,
+				6492A022AE70417680E31B37 /* libPods-LLImageEditorUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4178817D215158FC00A572C1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +115,8 @@
 				417881A1215158FE00A572C1 /* LLImageEditorTests */,
 				417881AC215158FF00A572C1 /* LLImageEditorUITests */,
 				41788187215158FC00A572C1 /* Products */,
+				DCB51B22CD4B63150CB96121 /* Pods */,
+				316A6710227F054A1238FC53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +133,7 @@
 		41788188215158FC00A572C1 /* LLImageEditor */ = {
 			isa = PBXGroup;
 			children = (
+				417881BB2151F61800A572C1 /* Cut */,
 				41788189215158FC00A572C1 /* AppDelegate.h */,
 				4178818A215158FC00A572C1 /* AppDelegate.m */,
 				4178818C215158FC00A572C1 /* ViewController.h */,
@@ -110,6 +143,7 @@
 				41788194215158FE00A572C1 /* LaunchScreen.storyboard */,
 				41788197215158FE00A572C1 /* Info.plist */,
 				41788198215158FE00A572C1 /* main.m */,
+				417881C22151F8A200A572C1 /* 100sh.jpg */,
 			);
 			path = LLImageEditor;
 			sourceTree = "<group>";
@@ -132,6 +166,28 @@
 			path = LLImageEditorUITests;
 			sourceTree = "<group>";
 		};
+		417881BB2151F61800A572C1 /* Cut */ = {
+			isa = PBXGroup;
+			children = (
+				417881BF2151F73200A572C1 /* YDCutViewController.h */,
+				417881C02151F73200A572C1 /* YDCutViewController.m */,
+			);
+			path = Cut;
+			sourceTree = "<group>";
+		};
+		DCB51B22CD4B63150CB96121 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21D6E29EDCBB1DDAEF700107 /* Pods-LLImageEditor.debug.xcconfig */,
+				F77305AF29C11498F3828202 /* Pods-LLImageEditor.release.xcconfig */,
+				B421D5A17CF02021FD6CB3B1 /* Pods-LLImageEditorTests.debug.xcconfig */,
+				3EBF3107FF0BE775E26222BC /* Pods-LLImageEditorTests.release.xcconfig */,
+				0505DB3477A407ABB515E744 /* Pods-LLImageEditorUITests.debug.xcconfig */,
+				1B767D4232B9F6654ADED9D2 /* Pods-LLImageEditorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 417881B2215158FF00A572C1 /* Build configuration list for PBXNativeTarget "LLImageEditor" */;
 			buildPhases = (
+				68F422BB4563CF0F976C6373 /* [CP] Check Pods Manifest.lock */,
 				41788182215158FC00A572C1 /* Sources */,
 				41788183215158FC00A572C1 /* Frameworks */,
 				41788184215158FC00A572C1 /* Resources */,
+				91B201CEA83B3E1777FF3FF9 /* [CP] Embed Pods Frameworks */,
+				036EAB8201AB757304216F91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 417881B5215158FF00A572C1 /* Build configuration list for PBXNativeTarget "LLImageEditorTests" */;
 			buildPhases = (
+				D6F995A3C83F838EBACD41D6 /* [CP] Check Pods Manifest.lock */,
 				4178819A215158FE00A572C1 /* Sources */,
 				4178819B215158FE00A572C1 /* Frameworks */,
 				4178819C215158FE00A572C1 /* Resources */,
+				78FE0107E56847B10EADF785 /* [CP] Embed Pods Frameworks */,
+				59A9E92B55A4D2A5E825C7FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 417881B8215158FF00A572C1 /* Build configuration list for PBXNativeTarget "LLImageEditorUITests" */;
 			buildPhases = (
+				E91F263E0E65978660B96C2F /* [CP] Check Pods Manifest.lock */,
 				417881A5215158FF00A572C1 /* Sources */,
 				417881A6215158FF00A572C1 /* Frameworks */,
 				417881A7215158FF00A572C1 /* Resources */,
+				B0E3FF8D6C09FEE80ADB9253 /* [CP] Embed Pods Frameworks */,
+				3279FE158EFA130307A5F984 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41788196215158FE00A572C1 /* LaunchScreen.storyboard in Resources */,
+				417881C32151F8A200A572C1 /* 100sh.jpg in Resources */,
 				41788193215158FE00A572C1 /* Assets.xcassets in Resources */,
 				41788191215158FC00A572C1 /* Main.storyboard in Resources */,
 			);
@@ -257,11 +323,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		036EAB8201AB757304216F91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLImageEditor/Pods-LLImageEditor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3279FE158EFA130307A5F984 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLImageEditorUITests/Pods-LLImageEditorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59A9E92B55A4D2A5E825C7FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLImageEditorTests/Pods-LLImageEditorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68F422BB4563CF0F976C6373 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78FE0107E56847B10EADF785 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLImageEditorTests/Pods-LLImageEditorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B201CEA83B3E1777FF3FF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLImageEditor/Pods-LLImageEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E3FF8D6C09FEE80ADB9253 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLImageEditorUITests/Pods-LLImageEditorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F995A3C83F838EBACD41D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E91F263E0E65978660B96C2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41788182215158FC00A572C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417881C12151F73200A572C1 /* YDCutViewController.m in Sources */,
 				4178818E215158FC00A572C1 /* ViewController.m in Sources */,
 				41788199215158FE00A572C1 /* main.m in Sources */,
 				4178818B215158FC00A572C1 /* AppDelegate.m in Sources */,
@@ -433,6 +638,7 @@
 		};
 		417881B3215158FF00A572C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D6E29EDCBB1DDAEF700107 /* Pods-LLImageEditor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +657,7 @@
 		};
 		417881B4215158FF00A572C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77305AF29C11498F3828202 /* Pods-LLImageEditor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -469,6 +676,7 @@
 		};
 		417881B6215158FF00A572C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B421D5A17CF02021FD6CB3B1 /* Pods-LLImageEditorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +696,7 @@
 		};
 		417881B7215158FF00A572C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBF3107FF0BE775E26222BC /* Pods-LLImageEditorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -507,6 +716,7 @@
 		};
 		417881B9215158FF00A572C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0505DB3477A407ABB515E744 /* Pods-LLImageEditorUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
@@ -525,6 +735,7 @@
 		};
 		417881BA215158FF00A572C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B767D4232B9F6654ADED9D2 /* Pods-LLImageEditorUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
