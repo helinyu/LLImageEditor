@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F9A3CBC05E511D823CACC2B /* libPods-LLImageEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D48ECBD54AEDE3AD76638F /* libPods-LLImageEditor.a */; };
+		413B2DB5215A54CB008EA29B /* YDScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413B2DB4215A54CB008EA29B /* YDScrollViewController.m */; };
 		4178818B215158FC00A572C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178818A215158FC00A572C1 /* AppDelegate.m */; };
 		4178818E215158FC00A572C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178818D215158FC00A572C1 /* ViewController.m */; };
 		41788191215158FC00A572C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4178818F215158FC00A572C1 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 		1B767D4232B9F6654ADED9D2 /* Pods-LLImageEditorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditorUITests/Pods-LLImageEditorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		21D6E29EDCBB1DDAEF700107 /* Pods-LLImageEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditor/Pods-LLImageEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		3EBF3107FF0BE775E26222BC /* Pods-LLImageEditorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLImageEditorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLImageEditorTests/Pods-LLImageEditorTests.release.xcconfig"; sourceTree = "<group>"; };
+		413B2DB3215A54CB008EA29B /* YDScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDScrollViewController.h; sourceTree = "<group>"; };
+		413B2DB4215A54CB008EA29B /* YDScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDScrollViewController.m; sourceTree = "<group>"; };
 		41788186215158FC00A572C1 /* LLImageEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLImageEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41788189215158FC00A572C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4178818A215158FC00A572C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 			children = (
 				417881BF2151F73200A572C1 /* YDCutViewController.h */,
 				417881C02151F73200A572C1 /* YDCutViewController.m */,
+				413B2DB3215A54CB008EA29B /* YDScrollViewController.h */,
+				413B2DB4215A54CB008EA29B /* YDScrollViewController.m */,
 			);
 			path = Cut;
 			sourceTree = "<group>";
@@ -467,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				417881C12151F73200A572C1 /* YDCutViewController.m in Sources */,
+				413B2DB5215A54CB008EA29B /* YDScrollViewController.m in Sources */,
 				4178818E215158FC00A572C1 /* ViewController.m in Sources */,
 				41788199215158FE00A572C1 /* main.m in Sources */,
 				4178818B215158FC00A572C1 /* AppDelegate.m in Sources */,

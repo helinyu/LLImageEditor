@@ -36,6 +36,12 @@
 @property (nonatomic, assign) CGFloat imgCurWidth;
 @property (nonatomic, assign) CGFloat imgCurHeight;
 
+//corner
+@property (nonatomic, strong) UIView *cornerLeftTopView;
+@property (nonatomic, strong) UIView *cornerTopRightView;
+@property (nonatomic, strong) UIView *cornerLeftBottomView;
+@property (nonatomic, strong) UIView *cornerRightBottomView;
+
 @end
 
 @implementation YDCutViewController
@@ -99,47 +105,47 @@
     [_editorView addSubview:_innerBottomLine];
     
     [_outsideTopLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.right.left.equalTo(self->_editorView);
+        make.top.right.left.equalTo(self->_editorImgView);
         make.height.mas_equalTo(3.f);
     }];
     
     [_outsideBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.equalTo(self->_editorView);
+        make.left.right.bottom.equalTo(self->_editorImgView);
         make.height.mas_equalTo(3.f);
     }];
     
     [_outsideLeftLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.left.equalTo(self->_editorView);
+        make.top.bottom.left.equalTo(self->_editorImgView);
         make.width.mas_equalTo(3.f);
     }];
     
     [_outsideRightLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.right.equalTo(self->_editorView);
+        make.top.bottom.right.equalTo(self->_editorImgView);
         make.width.mas_equalTo(3.f);
     }];
     
     [_innerTopLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.editorView).multipliedBy(1.f/3.f);
-        make.left.right.equalTo(self.editorView);
+        make.bottom.equalTo(self->_editorImgView).multipliedBy(1.f/3.f);
+        make.left.right.equalTo(self->_editorImgView);
         make.height.mas_equalTo(4.f);
     }];
     
     [_innerLeftLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.editorView).multipliedBy(1.f/3.f);
-        make.top.bottom.equalTo(self.editorView);
+        make.right.equalTo(self->_editorImgView).multipliedBy(1.f/3.f);
+        make.top.bottom.equalTo(self->_editorImgView);
         make.width.mas_equalTo(4.f);
     }];
     
     [_innerBottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(self.editorView);
-        make.bottom.equalTo(self.editorView).multipliedBy(2.f/3.f);
+        make.left.right.equalTo(self->_editorImgView);
+        make.bottom.equalTo(self->_editorImgView).multipliedBy(2.f/3.f);
         make.height.mas_equalTo(4.f);
     }];
 
     [_innerRightLine mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(4.f);
-        make.right.equalTo(self.editorView).multipliedBy(2.f/3.f);
-        make.top.bottom.equalTo(self.editorView);
+        make.right.equalTo(self->_editorImgView).multipliedBy(2.f/3.f);
+        make.top.bottom.equalTo(self->_editorImgView);
     }];
     
     _outsideTopLine.backgroundColor = [UIColor redColor];
@@ -149,9 +155,43 @@
    
     _innerTopLine.backgroundColor = [UIColor blueColor];
     _innerLeftLine.backgroundColor = [UIColor grayColor];
-    
     _innerBottomLine.backgroundColor = [UIColor greenColor];
     _innerRightLine.backgroundColor = [UIColor orangeColor];
+    
+    _cornerLeftTopView = [UIView new];
+    [_editorView insertSubview:_cornerLeftTopView atIndex:0];
+    [_cornerLeftTopView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(self.editorImgView).offset(-7.f);
+        make.width.height.mas_equalTo(40.f);
+    }];
+    _cornerLeftTopView.backgroundColor = [UIColor purpleColor];
+    
+    _cornerLeftBottomView = [UIView new];
+    [_editorView insertSubview:_cornerLeftBottomView atIndex:0];
+    [_cornerLeftBottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.editorImgView).offset(7.f);
+        make.left.equalTo(self.editorImgView).offset(-7.f);
+        make.width.height.mas_equalTo(40.f);
+    }];
+    _cornerLeftBottomView.backgroundColor = [UIColor purpleColor];
+    
+    _cornerTopRightView = [UIView new];
+    [_editorView insertSubview:_cornerTopRightView atIndex:0];
+    [_cornerTopRightView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.editorImgView).offset(7.f);
+        make.top.equalTo(self.editorImgView).offset(-7.f);
+        make.width.height.mas_equalTo(40.f);
+    }];
+    _cornerTopRightView.backgroundColor = [UIColor purpleColor];
+    
+    _cornerRightBottomView = [UIView new];
+    [_editorView insertSubview:_cornerRightBottomView atIndex:0];
+    [_cornerRightBottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.right.equalTo(self.editorImgView).offset(7.f);
+        make.width.height.mas_equalTo(40.f);
+    }];
+    _cornerRightBottomView.backgroundColor = [UIColor purpleColor];
+
 }
 
 - (void)onSetEditorView {
@@ -160,7 +200,8 @@
     [_editorView addSubview:_editorImgView];
     _editorImgView.image = [UIImage imageNamed:@"100sh.jpg"];
     [_editorImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.editorView);
+        make.left.top.equalTo(self.editorView).offset(20.f);
+        make.bottom.right.equalTo(self.editorView).offset(-20.f);
     }];
     CGFloat imgWidth = _editorImgView.image.size.width/[UIScreen mainScreen].scale;
     CGFloat imgHeight = _editorImgView.image.size.height/ [UIScreen mainScreen].scale;
