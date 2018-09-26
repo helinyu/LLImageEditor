@@ -9,7 +9,7 @@
 #import "YDScrollViewController.h"
 #import <Masonry.h>
 
-@interface YDScrollViewController ()
+@interface YDScrollViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIImageView *imageView;
@@ -30,25 +30,33 @@
         make.edges.equalTo(self.view);
     }];
     _scrollView.backgroundColor = [UIColor grayColor];
+    _scrollView.delegate = self;
+    _scrollView.maximumZoomScale = NSUIntegerMax;
+    _scrollView.bouncesZoom = YES;
+    _scrollView.scrollEnabled = YES;
     
     _imageView = [UIImageView new];
-    [self.view addSubview:_imageView];
+    [_scrollView addSubview:_imageView];
+    _imageView.contentMode = UIViewContentModeScaleAspectFit;
     [_imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self->_scrollView);
-        make.width.height.mas_equalTo(self.view.bounds.size.width);
+        make.edges.equalTo(self->_imageView.superview);
+        make.width.mas_equalTo(self.view.mas_width);
+        make.height.mas_equalTo(self.view.mas_height);
     }];
     _imageView.image = [UIImage imageNamed:@"100sh.jpg"];
-}
-
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
     
-    NSLog(@"viewDidLayoutSubviews");
 }
 
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    NSLog(@"viewWillLayoutSubviews");
+- (nullable UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return _imageView;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"scrollViewDidScroll");
+}
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView NS_AVAILABLE_IOS(3_2) {
+    NSLog(@"scrollViewDidZoom");
 }
 
 @end
